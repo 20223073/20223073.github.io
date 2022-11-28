@@ -6,7 +6,6 @@ categories: jekyll update
 comments: true
 ---
 
-## Jekyll 사이트에 Google Anlytics 추가하기
 
 ### Google Analytics에 들어가서 구글 계정으로 로그인 하기
 
