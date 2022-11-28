@@ -19,7 +19,7 @@ plugins:
 
 # Custom vars
 version:             1.1.0
-google_analytics_id: "G-Q99PPJ4GH1"
+google_analytics_id: #UA-XXXX-Y
 comment:
   provider:          "disqus"
   disqus:
