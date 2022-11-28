@@ -1,10 +1,10 @@
 # Setup
 title:               My blog
 tagline:             'Static website made with jekyll'
-description:         'A reserved <a href="https://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+description:         'A static website made with using jekyll as genator, hosted by Github Pages for KMU Eureka Project 2022-2nd term'
 url:                 https://20223073.github.io
 baseurl:             ''
-paginate:            5
+paginate:            6
 permalink:           pretty
 
 # About/contact
