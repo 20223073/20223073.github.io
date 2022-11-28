@@ -14,9 +14,9 @@ title: Home
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
-    {{ post.excerpt | strip_html | truncatewords: 45 }}
-    <a href="{{ site.baseurl }}{{ post.url }}">Read more...</a>
-    <hr size="5px" align="center" width="100%" color="#9a9a9a">
+    {{ post.excerpt | '...'}}
+    <a href="{{ site.baseurl }}{{ post.url }}">Read more</a>
+    <hr size="4px" align="center" width="100%" color="#9a9a9a">
   </div>
   {% endfor %}
 </div>
