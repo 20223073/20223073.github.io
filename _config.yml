@@ -1,7 +1,7 @@
 # Setup
 title:               My blog
 tagline:             'Static website made with jekyll'
-description:         'A static website made with using jekyll, hosted by Github Pages for KMU Eureka Project 2022-2nd term'
+description:         'A static website made with jekyll, hosted by Github Pages for KMU Eureka Project 2022-2nd term'
 url:                 https://20223073.github.io
 baseurl:             ''
 paginate:            6
