@@ -13,8 +13,6 @@ comments: true
 
 ![screenshot4](https://raw.githubusercontent.com/20223073/20223073.github.io/main/public/screenshot4.png)
 
-<!--more-->
-
 ### 속성 설정하기
 
 - 다음과 같이 설정한다
