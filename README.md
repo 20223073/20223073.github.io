@@ -1,134 +1,120 @@
-# Lanyon
+# Jekyll이랑 Github Pages을 사용하여 블록 만들기
 
-Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.
+## 시작하기 전 준비 
 
-![Lanyon](https://f.cloud.github.com/assets/98681/1825266/be03f014-71b0-11e3-9539-876e61530e24.png)
-![Lanyon with open sidebar](https://f.cloud.github.com/assets/98681/1825267/be04a914-71b0-11e3-966f-8afe9894c729.png)
+- git(git bash) 설치
 
+- Github에 <username>.github.io 저장소 만들기
 
-## Contents
+- Windows OS에서 ruby, jekyll 설치
 
-- [Usage](#usage)
-- [Options](#options)
-  - [Sidebar menu](#sidebar-menu)
-  - [Themes](#themes)
-  - [Reverse layout](#reverse-layout)
-- [Development](#development)
-- [Author](#author)
-- [License](#license)
+- 로컬 저장소를 폴더를 만들기
 
+## 로컬에서 jekyll을 설치하기
 
-## Usage
+- 로컬 저장소에서 git bash 시작하기
 
-Lanyon is a theme built on top of [Poole](https://github.com/poole/poole), which provides a fully furnished Jekyll setup—just download and start the Jekyll server. See [the Poole usage guidelines](https://github.com/poole/poole#usage) for how to install and use Jekyll.
+- ``jekyll -v`` 명령을 돌리고 jekyll이 잘 설치되어있는지 확인하기
 
+- 확인한 후 ``jekyll new . --force`` 명령을 돌리고 jekyll을 설치하기
 
-## Options
+- 실헹 후 ``ls`` 명령을 돌리고 웹파일들을 확인하기
 
-Lanyon includes some customizable options, typically applied via classes on the `<body>` element.
+- 마지막에 ``bundle exec jekyll serve`` 명령을 보내고 로컬에 웹을 돌려 보기
 
+## 로컬에서 리모트로 남기기
 
-### Sidebar menu
+- git bash을 시작하고 ``git status`` 명령을 돌리고 현재 상태를 보기
 
-Create a list of nav links in the sidebar by assigning each Jekyll page the correct layout in the page's [front-matter](http://jekyllrb.com/docs/frontmatter/).
+- ``git add * -f`` 명령을 보내고 모든 파일의 상태를 Staged으로 변경하기
 
-```
+- ``git commit -m "<comment>"`` 명령을 쓰고 comment 남기기
+
+- ``git push origin main`` 명령을 보내고 모든 파일을 리모트로 올리기
+
+## 포소트 업로드 하기
+
+- 로컬 저장소의 _posts 폴더에서 새로운 파일을 만들기
+
+- 파일 이름을 "YYYY-MM-DD-포스트-제목.md" 형식으로 정해주기
+
+- 포스트 정보를 정해 놓고 내용을 쓰기
+
+```markdown
 ---
-layout: page
-title: About
+layout: post
+title: "제목"
+date: YYYY-MM-DD HH-MM-SS +GT
+categories: 카테고리
 ---
 ```
 
-**Why require a specific layout?** Jekyll will return *all* pages, including the `atom.xml`, and with an alphabetical sort order. To ensure the first link is *Home*, we exclude the `index.html` page from this list by specifying the `page` layout.
+- 내용울 다 쓴 후에 파일을 저장하기
 
+- 저장된 파일을 ``git add _posts/YYYY-MM-DD-포스트-제목.md`` 명령을 보내고, ``git commit -m "<message>"`` 명령으로 반영하기 
 
-### Themes
+- 그 다음에 ``git push origin main`` 명령으로 리모트로 업로드 하기
 
-Lanyon ships with eight optional themes based on the [base16 color scheme](https://github.com/chriskempson/base16). Apply a theme to change the color scheme (mostly applies to sidebar and links).
+## 원하는 테마를 설치하기 
 
-![Lanyon with red theme](https://f.cloud.github.com/assets/98681/1825270/be065110-71b0-11e3-9ed8-9b8de753a4af.png)
-![Lanyon with red theme and open sidebar](https://f.cloud.github.com/assets/98681/1825269/be05ec20-71b0-11e3-91ea-a9138ef07186.png)
+- 원하는 테마의 저장소에 들어가기
 
-There are eight themes available at this time.
+- ``git clone``해서 로컬에 데마 저장소를 받아오기
 
-![Available theme classes](https://f.cloud.github.com/assets/98681/1817044/e5b0ec06-6f68-11e3-83d7-acd1942797a1.png)
+- 테마파일들을 로컬저장소에 반영하기 
 
-To use a theme, add any one of the available theme classes to the `<body>` element in the `default.html` layout, like so:
+- ``_post`` 폿스트 폴더를 제외하고 테마를 덮어쓰기
 
-```html
-<body class="theme-base-08">
-  ...
-</body>
+- 변경된 파일들을 리모테에 반영하기 ``(git add/rm)`` 
+-- add - 추가하기 
+-- rm - 제거하기
+
+## 댓글 기능을 추가하기
+
+- Disqus 홈페이지에서 Signup을 눌러서 회원가입하기
+
+- "I want to install Disqus on my site" 선택하기
+
+- 사이트 정보를 입력하기
+
+- Platform 중 Jekyll 선택하기
+
+- 설명에다라 Setup을 해놓기
+
+- 다음과 같은 key-value를 ``_config.yml`` 파일에 추가하기 
+```markdown
+comment: 
+    provider:       "disqus"
+    disqus:
+        shortname:  "<username>"
 ```
 
-To create your own theme, look to the Themes section of [included CSS file](https://github.com/poole/lanyon/blob/master/public/css/lanyon.css). Copy any existing theme (they're only a few lines of CSS), rename it, and change the provided colors.
-
-
-### Reverse layout
-
-![Lanyon with reverse layout](https://f.cloud.github.com/assets/98681/1825265/be03f2e4-71b0-11e3-89f1-360705524495.png)
-![Lanyon with reverse layout and open sidebar](https://f.cloud.github.com/assets/98681/1825268/be056174-71b0-11e3-88c8-5055bca4307f.png)
-
-Reverse the page orientation with a single class.
-
-```html
-<body class="layout-reverse">
-  ...
-</body>
+- Disqus 홈페이지에서 Universal Code를 복사하고 ``_layouts/post.html`` 파일에 수정해 놓기 
+```markdown
+{% if page.comments %}
+<h2>Comments</h2>
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    let PAGE_URL = "{{site.url}}{{page.url}}"
+    let PAGE_IDENTIFIER = "{{page.url}}"
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://20223073.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{% endif %}
 ```
 
+- 주석 해제 후, PAGE_URL과 PAGE_IDENTIFIER를 설정
 
-### Sidebar overlay instead of push
-
-Make the sidebar overlap the viewport content with a single class:
-
-```html
-<body class="sidebar-overlay">
-  ...
-</body>
-```
-
-This will keep the content stationary and slide in the sidebar over the side content. It also adds a `box-shadow` based outline to the toggle for contrast against backgrounds, as well as a `box-shadow` on the sidebar for depth.
-
-It's also available for a reversed layout when you add both classes:
-
-```html
-<body class="layout-reverse sidebar-overlay">
-  ...
-</body>
-```
-
-### Sidebar open on page load
-
-Show an open sidebar on page load by modifying the `<input>` tag within the `sidebar.html` layout to add the `checked` boolean attribute:
-
-```html
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" checked>
-```
-
-Using Liquid you can also conditionally show the sidebar open on a per-page basis. For example, here's how you could have it open on the homepage only:
-
-```html
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" {% if page.title =="Home" %}checked{% endif %}>
-```
-
-## Development
-
-Lanyon has two branches, but only one is used for active development.
-
-- `master` for development.  **All pull requests should be to submitted against `master`.**
-- `gh-pages` for our hosted site, which includes our analytics tracking code. **Please avoid using this branch.**
-
-
-## Author
-
-**Mark Otto**
-- <https://github.com/mdo>
-- <https://twitter.com/mdo>
-
-
-## License
-
-Open sourced under the [MIT license](LICENSE.md).
-
-<3
+- 댓글을 허용하고 싶은 포스트에 ``comments: true``를 추가하기 
