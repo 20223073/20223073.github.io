@@ -14,6 +14,8 @@ comments: true
 
 - Github에 <username>.github.io 저장소 만들기
 
+<!--more-->
+
 - Windows OS에서 ruby, jekyll 설치
 
 - 로컬 저장소를 폴더를 만들기
