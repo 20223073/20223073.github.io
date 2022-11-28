@@ -1,6 +1,6 @@
 # Setup
 title:               My blog
-tagline:             'Static website made with jekll'
+tagline:             'Static website made with jekyll'
 description:         'A reserved <a href="https://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
 url:                 https://20223073.github.io
 baseurl:             ''
