@@ -19,8 +19,10 @@ plugins:
 
 # Custom vars
 version:             1.1.0
-google_analytics_id: G-Q3D9EFD2ZP
 comment:
   provider:          "disqus"
   disqus:
     shortname:       "20223073"
+    
+ # Google Analytics
+google_analytics:    G-Q3D9EFD2ZP
