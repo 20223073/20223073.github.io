@@ -19,6 +19,7 @@ plugins:
 
 # Custom vars
 version:             1.1.0
+excerpt_separator:   <!--more-->
 comment:
   provider:          "disqus"
   disqus:
