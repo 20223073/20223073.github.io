@@ -16,7 +16,6 @@ author:
 # Gems
 plugins:
   - jekyll-paginate
-  - jekyll-admin
 
 # Custom vars
 version:             1.1.0
