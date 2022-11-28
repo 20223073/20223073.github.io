@@ -53,7 +53,7 @@ comments: true
 - *_includes* 디록테리에서 *`google_analytics.html`* 이라는 파일을 만들어서 다음 코드를 저장해 둔다.
 
 ```
-<script>
+ <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
