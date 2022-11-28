@@ -70,10 +70,7 @@ google_analytics: G-XXXXXXXXXX
 ```
 
 - 다음 코드를 `</head>` 태그의 위에 붙여넣기
-```
-  {% if site.google_analytics and jekyll.environment == 'production' %}
-    {% include google_analytics.html %}
-  {% endif %}
-```
+![screenshot](https://raw.githubusercontent.com/20223073/20223073.github.io/main/public/screenshot12.png)
 
-##### 마지막에 모든 파일을 저장하고 리모트에 푸시하면 완료.
+
+마지막에 모든 파일을 저장하고 리모트에 푸시하면 완료.
