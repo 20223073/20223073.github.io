@@ -97,3 +97,17 @@ comment:
 
 - 댓글을 허용하고 싶은 포스트에 ``comments: true``를 추가하기 
 ![screenshot](https://raw.githubusercontent.com/20223073/20223073.github.io/main/public/screenshot2.png)
+
+### 내가 만든 추가 기능들
+
+- date-format 변경함
+
+![screenshot](https://raw.githubusercontent.com/20223073/20223073.github.io/main/public/screenshot14.png)
+
+- post.excerpt 기능 추가함
+
+![screenshot](https://raw.githubusercontent.com/20223073/20223073.github.io/main/public/screenshot15.png)
+
+- Read more 버턴 추가함
+
+![screenshot](https://raw.githubusercontent.com/20223073/20223073.github.io/main/public/screenshot16.png)
