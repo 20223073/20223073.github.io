@@ -21,11 +21,11 @@ comments: true
 
 ![screenshot5](https://raw.githubusercontent.com/20223073/20223073.github.io/main/public/screenshot5.png)
 
-- 아무박스를 클릭하지 않고 `만들기` 버턴을 누른다
+- 아무 박스를 클릭하지 않고 `만들기` 버턴을 누른다
 
 ![screenshot6](https://raw.githubusercontent.com/20223073/20223073.github.io/main/public/screenshot6.png)
 
-- 다음에 창이 뜨면 체크 후 `동의함` 버턴울 누른다
+- 다음에 창이 뜨면 체크 후 `동의함` 버턴을 누른다
 
 ![screenshot7](https://raw.githubusercontent.com/20223073/20223073.github.io/main/public/screenshot7.png)
 
@@ -36,11 +36,11 @@ comments: true
 
 ![screenshot8](https://raw.githubusercontent.com/20223073/20223073.github.io/main/public/screenshot8.png)
 
-- 다음 같이 창이 나올 때 `웹` 버턴을 누른다
+- 다음과 같이 창이 나올 때 `웹` 버턴을 누른다
 
 ![screenshot9](https://raw.githubusercontent.com/20223073/20223073.github.io/main/public/screenshot9.png)
 
-- 뜬 창에 웹의 정보를 입력해주구 `스트림 만들기` 버턴을 누른다
+- 뜬 창에 웹의 정보를 입력해주고 `스트림 만들기` 버턴을 누른다
 
 ![screenshot10](https://raw.githubusercontent.com/20223073/20223073.github.io/main/public/screenshot10.png)
 
@@ -62,7 +62,7 @@ comments: true
 google_analytics: G-XXXXXXXXXX
 ```
 
-- 다음 코드를 `</head>` 태그의 위에 붙여넣기
+- 다음 코드를 `</head>` 태그의 위에 붙여 넣기
 ![screenshot](https://raw.githubusercontent.com/20223073/20223073.github.io/main/public/screenshot12.png)
 
 
